@@ -10,13 +10,12 @@ function BuildSelectBox($name,$keysAndValuesArray,$selectedValue="")
 		}
 	}
 	$html .= '</select>';
-  return $html;
+  	return $html;
 }
 
 function CleanString($string)
 {
 	$strip = stripslashes($string);
-  $clean = $mysqli->real_escape_string($strip);
-  $trim = trim($clean);
+  	$trim = trim($clean);
 	return $trim;
 }
